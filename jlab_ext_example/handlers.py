@@ -23,7 +23,7 @@ class NniProxyHandler(RequestHandler):
         self.set_status(r.status_code)
         for key, value in r.headers.items():
             self.add_header(key, value)
-        self.finish(r.text)
+        self.finish(r.content)
 
 def setup_handlers(web_app):
     base_url = url_path_join(web_app.settings['base_url'], 'jlab-ext-example')
