@@ -1,4 +1,4 @@
-This requires NNI [dev-jupyter branch](https://github.com/microsoft/nni/tree/dev-jupyter).
+This requires NNI master branch.
 
 ```
 pip install -e .
