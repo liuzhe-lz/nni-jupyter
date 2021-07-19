@@ -26,7 +26,7 @@ class NniProxyHandler(RequestHandler):
         self.finish(r.content)
 
 def setup_handlers(web_app):
-    base_url = url_path_join(web_app.settings['base_url'], 'jlab-ext-example')
+    base_url = url_path_join(web_app.settings['base_url'], 'nni')
     proxy_url = url_path_join(base_url, 'nni/(.*)')
     handlers = [(proxy_url, NniProxyHandler)]
     web_app.add_handlers('.*$', handlers)

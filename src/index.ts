@@ -33,28 +33,6 @@ const extension: JupyterFrontEndPlugin<void> = {
   ) => {
     console.log('JupyterLab extension server-extension-example is activated!');
 
-    // GET request
-    //try {
-    //  const data = await requestAPI<any>('hello');
-    //  console.log(data);
-    //} catch (reason) {
-    //  console.error(`Error on GET /jlab-ext-example/hello.\n${reason}`);
-    //}
-
-    // POST request
-    //const dataToSend = { name: 'George' };
-    //try {
-    //  const reply = await requestAPI<any>('hello', {
-    //    body: JSON.stringify(dataToSend),
-    //    method: 'POST'
-    //  });
-    //  console.log(reply);
-    //} catch (reason) {
-    //  console.error(
-    //    `Error on POST /jlab-ext-example/hello ${dataToSend}.\n${reason}`
-    //  );
-    //}
-
     const { commands, shell } = app;
     const command = CommandIDs.get;
     const category = 'Extension Examples';
@@ -91,7 +69,7 @@ class IFrameWidget extends IFrame {
         ]
     });
     const baseUrl = PageConfig.getBaseUrl();
-    this.url = baseUrl + 'jlab-ext-example/nni/oview';
+    this.url = baseUrl + 'nni/nni/oview';
     this.id = 'doc-example';
     this.title.label = 'Server Doc';
     this.title.closable = true;

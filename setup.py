@@ -16,7 +16,7 @@ import setuptools
 HERE = Path(__file__).parent.resolve()
 
 # The name of the project
-name = "jlab_ext_example"
+name = "nni_jupyter"
 
 lab_path = HERE / name / "labextension"
 
@@ -27,13 +27,13 @@ jstargets = [
 
 package_data_spec = {name: ["*"]}
 
-labext_name = "@jupyterlab-examples/server-extension"
+labext_name = "nni-jupyter"
 
 data_files_spec = [
-    ("share/jupyter/labextensions/%s" % labext_name, str(lab_path), "**"),
-    ("share/jupyter/labextensions/%s" % labext_name, str(HERE), "install.json"),
-    ("etc/jupyter/jupyter_notebook_config.d", "jupyter-config/jupyter_notebook_config.d", "jlab_ext_example.json"),
-    ("etc/jupyter/jupyter_server_config.d", "jupyter-config/jupyter_server_config.d", "jlab_ext_example.json"),
+    #("share/jupyter/labextensions/%s" % labext_name, str(lab_path), "**"),
+    #("share/jupyter/labextensions/%s" % labext_name, str(HERE), "install.json"),
+    #("etc/jupyter/jupyter_notebook_config.d", "jupyter-config/jupyter_notebook_config.d", "jlab_ext_example.json"),
+    #("etc/jupyter/jupyter_server_config.d", "jupyter-config/jupyter_server_config.d", "jlab_ext_example.json"),
 ]
 
 cmdclass = create_cmdclass(

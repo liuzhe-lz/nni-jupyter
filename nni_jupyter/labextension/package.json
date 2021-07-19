@@ -79,6 +79,11 @@
       }
     },
     "extension": true,
-    "outputDir": "nni_jupyter/labextension"
+    "outputDir": "nni_jupyter/labextension",
+    "_build": {
+      "load": "static/remoteEntry.374b23176d42813f7f52.js",
+      "extension": "./extension",
+      "style": "./style"
+    }
   }
 }

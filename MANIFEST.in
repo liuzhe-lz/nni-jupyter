@@ -6,8 +6,8 @@ recursive-include jupyter-config *.json
 
 include package.json
 include ts*.json
-graft jlab_ext_example/labextension
-graft jlab_ext_example/public
+graft nni_jupyter/labextension
+graft nni_jupyter/public
 
 # Javascript files
 graft src
